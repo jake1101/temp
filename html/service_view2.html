@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" id="viewport" content="width=1220" />
+  <title>위치기반 안전관제 서비스</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link type="text/css" rel="stylesheet" href="../css/datepicker.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+<script>
+ jQuery.fn.middle = function () {
+        this.css("position","absolute");
+        this.css("top", '100%');
+        this.css("left", '50%');
+        this.css("margin-top",- ($(this).outerHeight()) / 2) + "px";
+        this.css("margin-left",- ($(this).outerWidth()) / 2) + "px";
+        return this;
+    }
+ $(document).ready(function(){
+
+  $("#openpopup").click(function(){
+    $("#layer_popup").show().middle();
+  });
+  $("#openpopup2").click(function(){
+    $("#layer_popup").show().middle();
+  });
+  $(".closed").click(function(){
+    $("#layer_popup").hide();
+  });
+  $("#continu").click(function(){
+    $("#layer_popup").hide();
+  });
+
+});
+</script>
+
+	<div id="skipNav"> 
+		<a href="#accessibility-contents">본문 바로가기</a> 
+		<a href="#gnb">주메뉴 바로가기</a> 
+	</div>
+
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">			
+			<h1 class="logo"><a href="main.html"><img src="../images/logo.png" alt="HAS HyundaiAutoeverSafety platform" /></a></h1>
+			<div class="gnb">
+				<ul class="depth1">
+					<li class="on">
+						<a href="service_offering.html">Service Offering</a>
+						<ul class="depth2">
+							<li><a href="#">전체</a></li>
+							<li><a href="service_offering.html">안전 서비스</a></li>
+							<li><a href="#">OO 서비스</a></li>
+							<li><a href="#">OO 서비스</a></li>
+						</ul>
+					</li>
+					<li><a href="customer_center.html">고객센터</a></li>
+					<li><a href="cart.html">장바구니</a></li>
+				</ul>
+			</div>
+			<a href="login.html" class="right_link">로그인</a>
+		</div>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div class="sub_visual service">
+				<div class="inner">
+					<div class="location">
+						<ul>
+							<li><a href="main.html">홈</a> <span>&gt;</span></li>
+							<li><a href="service_offering.html">Service offering</a> <span>&gt;</span></li>
+							<li>안전관제 서비스 <span>&gt;</span></li>
+							<li>위치기반 안전관제 서비스</li>
+						</ul>
+					</div>
+					<div class="sub_tit">
+						<h2>Service offering</h2>
+						<p>귀사에 맞는 원하는 서비스를 확인하고 신청하세요</p>
+					</div>
+				</div>
+			</div>
+			<div class="lnb">
+				<ul>
+					<li class="on"><a href="#">서비스 개요</a></li>
+					<li><a href="#">서비스 제공 내역</a></li>
+					<li><a href="#">주요 기능</a></li>
+					<li><a href="#">특장점</a></li>
+					<li><a href="#">적용 디바이스</a></li>
+					<li><a href="#">적용 추천 사이트</a></li>
+				</ul>
+			</div>
+			<div class="contents sec01">
+				<div class="left_box">
+					<h3 class="sub_tit mt40">위치기반 안전관제 서비스</h3>
+					<p>
+						LoRa, SmartTag 를 활용하여 산업현장 내 작업자와 이동장비의 실시간<br />
+						위치를 모니터링함으로써, 위험구역 접근, 긴급구조신호나 추락 등 사고 상황이<br />
+						발생 시 이를 감지하여 안전사고의 발생에 신속하게 대응 가능한 <br />
+						위치기반 안전관제 서비스 입니다.
+					</p>
+					<ul>
+						<li>
+							<h6>위치정보 구성</h6>
+							외부 – GPS + BLE Beacon (비콘)<br />
+							실내 – BLE Beacon (비콘)
+						</li>
+						<li>
+							<h6>비콘 설치 및 관리</h6>
+							현장 내 GPS음영지역 (천장있는 건물등) 설치<br />
+							설치 후 약 2년간 사용가능
+						</li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<img src="../images/service_view2_img1.jpg" alt="LoRa+BLE 기반 위치 파악" />
+				</div><div class="clear"></div>
+			</div>
+			<div class="bg_gray">
+				<div class="contents sec02">
+					<div class="left_box">
+						<img src="../images/service_view2_img2.jpg" alt="" />
+					</div>
+					<div class="right_box">
+						<h3 class="sub_tit mt40">서비스 제공 내역</h3>
+						<p>
+							실외(GPS), 실내(Beacon) 작업자의 실시간 위치 수집 및 모니터링
+							: SmartTag로 부터 1분 이내 주기로 위치정보 주기적으로 수집<br />
+							: 지도 혹은 3D 위에서 작업자와 이동장비의 위치 표시<br />
+							: 현장의 Zone 관리 및 작업자의 위험지역 모니터링
+						</p>
+					</div>
+				</div>
+			</div> 
+			<div class="contents sec03">
+				<h3 class="sub_tit mt40">주요 기능</h3>
+				<div class="box3">
+					<ul>
+						<li class="w32">
+							<h5>현황 모니터링</h5>
+							<p>
+								- 작업자 및 이동장비의 실시간 위치를 기반으로, 어느 구역에 어떤 작업자 및 장비가 작업중인지 한 눈에 확인 할 수 있습니다.<br />
+								- 현장 내 출근(출역) 인원에 대한 종합적인 정보를 대시보드 상에서 한눈에 확인 할 수 있습니다.<br />
+								- 대시보드 내 3D 모델링을 통해 3차원 공간 내 작업자의 위치 정보를 제공 합니다.
+							</p>
+						</li>
+						<li>
+							<img src="../images/service_view2_function1.jpg" alt="" />
+						</li>
+						<li>
+							<img src="../images/service_view2_function2.jpg" alt="" />
+						</li>
+						<li class="w32">
+							<h5>위험 모니터링</h5>
+							<p>
+								- 작업자가 접근하지 말아야할 곳 혹은 재난 발생구역 등을 위험구역으로 지정하여, 접근관리가 가능합니다.<br />
+								- 작업자의 위험 상황에 대해 SmartTag로 대상자 및 위치까지 감지하여 빠르게 대응할 수 있습니다.
+							</p>
+						</li>
+						<li>
+							<img src="../images/service_view2_function3.jpg" alt="" />
+						</li>
+						<li>
+							<img src="../images/service_view2_function4.jpg" alt="" />
+						</li>
+						<li class="w32">
+							<h5>통계 및 이력</h5>
+							<p>
+								- 협력사별 작업자의 투입 통계 이력을 제공합니다.<br />
+								- 선택하는 대상의 특정일 동선이력을 제공합니다.<br />
+								- 특정일에 특정 구역 내 어느 작업자 및 이동장비가 실제 투입 되었는지에 대한 이력을 제공합니다.
+							</p>
+						</li>
+						<li>
+							<img src="../images/service_view2_function5.jpg" alt="" />
+						</li>
+						<li>
+							<img src="../images/service_view2_function6.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg_blue">
+				<div class="contents sec04">
+					<h3 class="sub_tit">특장점</h3>
+					<div class="box3 mt40">
+						<ul>
+							<li>
+								<strong>GIS기반</strong>의 플랫폼
+								<img src="../images/service_view2_list1.png" alt="" />
+							</li>
+							<li class="m30">
+								<strong>고해상도 드론</strong> 촬영사진 및 도면 등을 베이스맵 위에 별도 레이어 구성 가능(옵션)
+								<img src="../images/service_view2_list2.png" alt="" />
+							</li>
+							<li>
+								도면 기반의 3D 모델링 위에서 작업자 및 <strong>이동장비의 위치 표출</strong> 가능(옵션) 
+								<img src="../images/service_view2_list3.png" alt="" />
+							</li>
+							<li>
+								<strong>작업자용</strong> SmartTag의 <strong>활동량 체크</strong> 기능
+								<img src="../images/service_view2_list4.png" alt="" />
+							</li>
+							<li class="m30">
+								작업자용 SmartTag의 <strong>긴급신호 및 추락신호 감지</strong> 기능
+								<img src="../images/service_view2_list5.png" alt="" />
+							</li>
+							<li>
+								관리자가 플랫폼 상에서 지정하는 위험구역을 통해 <strong>작업자 접근관리 기능</strong> 제공
+								<img src="../images/service_view2_list6.png" alt="" />
+							</li>
+							<li>
+								관리자 모바일앱과 SMS, 대시보드로 보내는 <strong>실시간 알림 전파</strong> (긴급, 추락, 위험구역 접근 등)
+								<img src="../images/service_view2_list7.png" alt="" />
+							</li>
+							<li class="m30">
+								<strong>사고</strong> 발생 시 해당 일자 및 시간의 <strong>위치이력 정보</strong> 제공
+								<img src="../images/service_view2_list8.png" alt="" />
+							</li>
+							<li>
+								SmartTag 의 빠른 교부 및 관리를 위한 모바일 <strong>QRCode Scanning</strong> 기능 제공
+								<img src="../images/service_view2_list9.png" alt="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contents sec05">
+				<h3 class="sub_tit mt120">적용 디바이스</h3>
+				<div class="box4">
+					<ul class="first-box">
+						<li>
+							<h5>LoRa Gateway 및 Relay</h5>
+							<p class="small">
+								LoRa 통신 중계기
+							</p>
+							<img src="../images/image_raycom_device1.png" alt="" class="img" />
+						</li>
+						<li>
+							<h5>작업자용 Smart Tag</h5>
+							<p class="small">
+								작업자 실시간 위치정보 제공<br />(활동량,긴급구조신호, 추락감지)
+							</p>
+							<img src="../images/image_raycom_device2.png" alt="" class="img" />
+						</li>
+						<li>
+							<h5>BLE Beacon</h5>
+							<p class="small">
+								실내나 고도 구분이 필요한 구역에 설치하여 SmartTag 에서 인식하여 위치 측위에 활용
+							</p>
+							<img src="../images/image_raycom_device3.png" alt="" class="img" />
+						</li>
+					</ul>
+				</div>
+				<h3 class="sub_tit mt120">적용 추천 사이트</h3>
+				<div class="box4">
+					<ul>
+						<li>
+							<img src="../images/img_raycom_recommend-1.jpg" alt="" />
+							<p>건설 진행 중인 건축 공사<br /> 현장</p>
+						</li>
+						<li>
+							<img src="../images/img_raycom_recommend-2.jpg" alt="" />
+							<p>넓은 개활지를 가진 플랜트<br /> 현장 및 토목 공사 현장</p>
+						</li>
+						<li>
+							<img src="../images/img_raycom_recommend-3.jpg" alt="" />
+							<p>통신사 제공 인터넷이 용이<br />하지 않은 산업현장</p>
+						</li>
+						<li>
+							<img src="../images/img_raycom_recommend-4.jpg" alt="" />
+							<p>실외 및 실내 측위가 필요한<br />안전관리 현장</p>
+						</li>
+					</ul>
+				</div>
+				<h3 class="sub_tit mt120">서비스 신청 시 주의사항</h3>
+				<ul class="dot_list">
+					<li>서비스 적용을 위한 현장 설치 및 테스트 기간에 약 15일이 소요되며, 이에 서비스 개시는 <strong>현재 기준 16일 이후</strong>부터 가능합니다.</li>
+					<li>현장 상황에 따라 서비스 개시일은 변동될 수 있습니다.</li>
+					<li>최종 구독료는 관리자와의 협의 및 현장 상황에 따라 변동될 수 있습니다.</li>
+					<li>약정기간 이내 서비스 취소 시, <strong>20%</strong>의 위약금이 발생합니다.</li>
+				</ul>
+				<div class="btn-c mt160">
+					<a href="#" id="openpopup" class="page_btn btn_blue"><img src="../images/icon_cart.png" alt="" />장바구니 담기</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<div id="footer">
+			<div class="inner">
+				<h4>사이트맵</h4>
+				<ul>
+					<li><a href="main.html">Home</a></li>
+					<li><a href="service_offering.html">Service Offering</a></li>
+					<li><a href="customer_center.html">고객센터</a></li>
+					<li><a href="cart.html">장바구니</a></li>
+					<li><a href="login.html">로그인</a></li>
+				</ul>
+				<div class="ft_menu">
+					<ul>
+						<li>회사명</li>
+						<li>대표자</li>
+						<li>사업자번호</li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보 처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--// footer -->
+	</div>
+	<!--// wrap -->
+
+	<!-- layer_popup -->
+	<div id="layer_popup">
+		<div class="dim_bg"></div>
+
+		<!-- 팝업 내용 -->
+		<div class="popup_con">
+			<a href="#" class="closed"><img src="../images/icon_close.png" alt="" /></a>
+			<div class="txt">
+				해당 서비스 상품이 장바구니에 담겼습니다.<br />
+				담긴 상품을 장바구니에서 확인하시겠습니까?
+			</div>
+			<div class="btn-r mt40">
+				<a href="cart.html" class="btn btn_blue">장바구니 보기</a>
+				<a href="#" id="continu" class="btn btn_light_gray ml5">계속 둘러보기</a>
+			</div>
+		</div>
+		<!--// 팝업 내용 -->
+
+	</div>
+	<!--// layer_popup  -->
+
+</body>
+</html>

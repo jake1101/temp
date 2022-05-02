@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" id="viewport" content="width=1220" />
+  <title>서비스 신청</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link type="text/css" rel="stylesheet" href="../css/datepicker.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+
+	<!-- layer_popup -->
+	<div id="layer_popup" class="pop_page mt40" style="display:block">
+		<div class="dim_bg"></div>
+		<!-- 팝업 내용 -->
+		<div class="popup_service">
+			<a href="#" class="closed"><img src="../images/close.png" alt="" /></a>
+			<div class="tit">
+				<h2>서비스 신청 <span class="col_red">*표시는 필수입력 항목</span></h2>
+			</div>
+			<div class="pop_form">
+				<div class="pop_location">
+					<ul>
+						<li>안전관제 서비스 <span>&gt;</span>
+						<li>AI머신비전 안전관제 서비스</li>
+					</ul>
+				</div>
+				<ul>
+					<li>
+						<strong class="required">사업장</strong>
+						<select>
+							<option>로그인 이후 선택 가능합니다</option>
+						</select>
+					</li>
+					<li>
+						<strong class="required">서비스 개시 요청일</strong>
+						<input type="text" name="calendar_start" class="startDate" placeholder="시작일">
+					</li>
+					<li>
+						<strong class="required">디바이스 수량</strong>
+						<dl>
+							<dt class="required">AI머신비전</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>유도등 일체형 대피안내 기기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>유도등 일체형 대피안내 기기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>무선중계기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>지능형 CCTV 연동<p class="small">(현장 기설치된 지능형 CCTV 기준)</p></dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+						</dl>
+					</li>
+					<li>
+						<strong class="required">구독기간(약정기간)</strong>
+						<select>
+							<option>선택</option>
+						</select>
+					</li>
+					<li>
+						<strong>서비스 만료 예정일</strong>
+						<a href="#" class="btn btn_gray">조회</a>
+						<span class="date">2023. 02. 14</span>
+					</li>
+					<li>
+						<strong>예상 월 구독료</strong>
+						<a href="#" class="btn btn_gray">조회</a>
+						<span class="date">2023. 02. 14</span>
+					</li>
+			
+				</ul>
+			</div>
+			<div class="pop_ft">
+				<span class="col_red">필수입력 항목을 모두 입력해주세요</span>
+				<a href="#" class="btn btn_blue">장바구니 담기</a>
+			</div>
+		</div>
+		<!--// 팝업 내용 -->
+
+	</div>
+	<!--// layer_popup  -->
+	
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" id="viewport" content="width=1220" />
+  <title>장바구니</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link type="text/css" rel="stylesheet" href="../css/datepicker.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+<script>
+ jQuery.fn.middle = function () {
+        this.css("position","absolute");
+        this.css("top", '100%');
+        this.css("left", '50%');
+        this.css("margin-top",- ($(this).outerHeight()) / 2) + "px";
+        this.css("margin-left",- ($(this).outerWidth()) / 2) + "px";
+        return this;
+    }
+ $(document).ready(function(){
+
+  $("#openpopup").click(function(){
+    $("#layer_popup").show().middle();
+  });
+  $("#openpopup2").click(function(){
+    $("#layer_popup").show().middle();
+  });
+  $(".closed").click(function(){
+    $("#layer_popup").hide();
+  });
+  $("#continu").click(function(){
+    $("#layer_popup").hide();
+  });
+
+});
+</script>
+
+	<div id="skipNav"> 
+		<a href="#accessibility-contents">본문 바로가기</a> 
+		<a href="#gnb">주메뉴 바로가기</a> 
+	</div>
+
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<h1 class="logo"><a href="main.html"><img src="../images/logo.png" alt="HAS HyundaiAutoeverSafety platform" /></a></h1>
+			<div class="gnb">
+				<ul class="depth1">
+					<li>
+						<a href="service_offering.html">Service Offering</a>
+						<ul class="depth2">
+							<li><a href="#">전체</a></li>
+							<li><a href="service_offering.html">안전 서비스</a></li>
+							<li><a href="#">OO 서비스</a></li>
+							<li><a href="#">OO 서비스</a></li>
+						</ul>
+					</li>
+					<li><a href="customer_center.html">고객센터</a></li>
+					<li class="on"><a href="cart.html">장바구니</a></li>
+				</ul>
+			</div>
+			<a href="login.html" class="right_link">로그인</a>
+		</div>
+		<!--// header -->
+		<!-- container -->
+		<div id="container">
+			<div class="sub_visual cart">
+				<div class="inner">
+					<div class="location">
+						<ul>
+							<li><a href="main.html">홈</a> <span>&gt;</span></li>
+							<li>장바구니</li>
+						</ul>
+					</div>
+					<div class="sub_tit">
+						<h2>장바구니</h2>
+						<p>장바구니에서 서비스 신청하려면 로그인이 필요합니다</p>
+					</div>
+				</div>			
+			</div>
+			<div class="contents">
+				<div class="board_top">
+					<select>
+						<option>전체</option>
+					</select>
+					<div class="search_box">
+						<div class="search_inp"><img src="../images/icon_search.png" alt="" /><input type="text" /></div>
+						<a href="#" class="btn_search">검색</a>
+						<a href="#" class="btn_reset"><img src="../images/icon_reset.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="tbl_default mt20">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<caption>장바구니<span>장바구니의 NO, 서비스 그룹, 서비스 명, 삭제버튼 정보 제공</span></caption>
+						<colgroup>
+							<col width="*" />
+							<col width="*" />
+							<col width="*" />
+							<col width="20" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>NO</th>
+								<th>서비스 그룹</th>
+								<th>서비스 명</th>
+								<th>삭제</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>이동형 비전센서</td>
+								<td>
+									이동형 비전센서 활용 접근통제
+									<a href="#" class="icon_more"><img src="../images/icon_more.png" alt="" /></a>
+								</td>
+								<td><a href="#" class="tbl_btn btn_red_line">삭제</a></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>이동형 비전센서</td>
+								<td>
+									이동형 비전센서 활용 접근통제
+									<a href="#" class="icon_more"><img src="../images/icon_more.png" alt="" /></a>
+								</td>
+								<td><a href="#" class="tbl_btn btn_red_line">삭제</a></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>이동형 비전센서</td>
+								<td>
+									이동형 비전센서 활용 접근통제
+									<a href="#" class="icon_more"><img src="../images/icon_more.png" alt="" /></a>
+								</td>
+								<td><a href="#" class="tbl_btn btn_red_line">삭제</a></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>이동형 비전센서</td>
+								<td>
+									이동형 비전센서 활용 접근통제
+									<a href="#" class="icon_more"><img src="../images/icon_more.png" alt="" /></a>
+								</td>
+								<td><a href="#" class="tbl_btn btn_red_line">삭제</a></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>이동형 비전센서</td>
+								<td>
+									이동형 비전센서 활용 접근통제
+									<a href="#" class="icon_more"><img src="../images/icon_more.png" alt="" /></a>
+								</td>
+								<td><a href="#" class="tbl_btn btn_red_line">삭제</a></td>
+							</tr>
+							<!-- 장바구니에 상품 없을 시 -->
+							<tr>
+								<td colspan="4" class="list_none">
+									장바구니에 담은 상품이 없습니다.
+								</td>
+							</tr>
+							<!--// 장바구니에 상품 없을 시 -->
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-r mt40">
+					<span id="openpopup" class="page_btn btn_blue">신청하기</span>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<div id="footer">
+			<div class="inner">
+				<h4>사이트맵</h4>
+				<ul>
+					<li><a href="main.html">Home</a></li>
+					<li><a href="service_offering.html">Service Offering</a></li>
+					<li><a href="customer_center.html">고객센터</a></li>
+					<li><a href="cart.html">장바구니</a></li>
+					<li><a href="login.html">로그인</a></li>
+				</ul>
+				<div class="ft_menu">
+					<ul>
+						<li>회사명</li>
+						<li>대표자</li>
+						<li>사업자번호</li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보 처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--// footer -->
+	</div>
+	<!--// wrap -->
+	
+	<!-- layer_popup -->
+	<div id="layer_popup" class="mt40">
+		<div class="dim_bg"></div>
+		<!-- 팝업 내용 -->
+		<div class="popup_service">
+			<a href="#" class="closed"><img src="../images/close.png" alt="" /></a>
+			<div class="tit">
+				<h2>서비스 신청 <span class="col_red">*표시는 필수입력 항목</span></h2>
+			</div>
+			<div class="pop_form">
+				<div class="pop_location">
+					<ul>
+						<li>안전관제 서비스 <span>&gt;</span>
+						<li>AI머신비전 안전관제 서비스</li>
+					</ul>
+				</div>
+				<ul>
+					<li>
+						<strong class="required">사업장</strong>
+						<select>
+							<option>로그인 이후 선택 가능합니다</option>
+						</select>
+					</li>
+					<li>
+						<strong class="required">서비스 개시 요청일</strong>
+						<input type="text" name="calendar_start" class="startDate" placeholder="시작일">
+					</li>
+					<li>
+						<strong class="required">디바이스 수량</strong>
+						<dl>
+							<dt class="required">AI머신비전</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>유도등 일체형 대피안내 기기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>유도등 일체형 대피안내 기기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>무선중계기</dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+							<dt>지능형 CCTV 연동<p class="small">(현장 기설치된 지능형 CCTV 기준)</p></dt>
+							<dd><input type="text" placeholder="" /> 대</dd>
+						</dl>
+					</li>
+					<li>
+						<strong class="required">구독기간(약정기간)</strong>
+						<select>
+							<option>선택</option>
+						</select>
+					</li>
+					<li>
+						<strong>서비스 만료 예정일</strong>
+						<a href="#" class="btn btn_gray">조회</a>
+						<span class="date">2023. 02. 14</span>
+					</li>
+					<li>
+						<strong>예상 월 구독료</strong>
+						<a href="#" class="btn btn_gray">조회</a>
+						<span class="date">2023. 02. 14</span>
+					</li>
+			
+				</ul>
+			</div>
+			<div class="pop_ft">
+				<span class="col_red">필수입력 항목을 모두 입력해주세요</span>
+				<a href="#" class="btn btn_blue">장바구니 담기</a>
+			</div>
+		</div>
+		<!--// 팝업 내용 -->
+
+	</div>
+	<!--// layer_popup  -->
+
+</body>
+</html>			
